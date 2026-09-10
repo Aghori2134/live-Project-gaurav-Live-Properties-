@@ -28,3 +28,27 @@ nav{
 	box-shadow:2px 3px 3px white;
 	border:1px solid darkblue;
 }
+.trust{
+	animation-name:rotate;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+@keyframes rotate{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.09);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.iconss{
+	transition:all 1s;
+}
+.iconss:hover{
+	transform:rotate(360deg);
+	background-color:#F57C00;
+}
