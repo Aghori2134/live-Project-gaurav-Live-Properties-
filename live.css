@@ -1,0 +1,30 @@
+.cards{
+	transition:all 0.5s;
+	box-shadow:2px 2px 0px rgb(11, 42, 91);
+}
+.cards:hover{
+	transform:scale(1.04);
+	background-color:white;
+}
+nav{
+	z-index:100;
+}
+.card{
+	transition:all 0.5s;
+}
+.card:hover{
+	transform:scale(1.05);
+}
+.icon:hover{
+	border-bottom:2px solid orange;
+}
+.icon2:hover{
+	color:orange;
+}
+.imghj{
+	transition:all 0.4s;
+}
+.imghj:hover{
+	box-shadow:2px 3px 3px white;
+	border:1px solid darkblue;
+}

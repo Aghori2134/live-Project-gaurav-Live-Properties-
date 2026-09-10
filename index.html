@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="live.css">
+    <title>Live Property</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+        rel="stylesheet">
+</head>
+
+<body class="bg-[#B9DDF5]">
+
+    <!-- NAVBAR -->
+    <nav class=" sticky top-0 w-full" style="background-color:rgba(167, 199, 221, 0.80);">
+
+        <div class="max-w-7xl mx-auto px-6 py-4
+                    flex items-center justify-between">
+            <div class="flex items-center gap-3">
+				<img src="images/logo.png" class="h-14 imghj" style="border-radius:100px;">
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#"
+                   class="font-semibold text-[#0B2A5B]
+                          hover:text-[#F57C00] transition icon">
+                    Home
+                </a>
+                <div class="relative group">
+
+                    <button
+                        class="flex items-center gap-1
+                               font-semibold text-[#0B2A5B]
+                               hover:text-[#F57C00] transition">
+
+                        Properties
+
+                        <i class="ri-arrow-down-s-line
+                                  text-lg
+                                  group-hover:rotate-180
+                                  transition"></i>
+
+                    </button>
+                    <div
+                        class="absolute left-0 top-full mt-3
+                               w-52 bg-white rounded-xl
+                               shadow-xl border
+                               border-[#0B2A5B]/10
+                               opacity-0 invisible
+                               group-hover:opacity-100
+                               group-hover:visible
+                               transition-all duration-200" style="background-color:rgba(179, 214, 238); border:1px solid gray;">
+
+                        <a href="#"
+                           class="block px-5 py-3
+                                  text-[#0B2A5B]
+                                  hover:bg-[#B9DDF5]
+                                  hover:text-[#F57C00]
+                                  rounded-t-xl">
+                            <i class="ri-building-line mr-2"></i>
+                            Apartments
+                        </a>
+
+                        <a href="#"
+                           class="block px-5 py-3
+                                  text-[#0B2A5B]
+                                  hover:bg-[#B9DDF5]
+                                  hover:text-[#F57C00]">
+                            <i class="ri-home-4-line mr-2"></i>
+                            Houses
+                        </a>
+
+                        <a href="#"
+                           class="block px-5 py-3
+                                  text-[#0B2A5B]
+                                  hover:bg-[#B9DDF5]
+                                  hover:text-[#F57C00]">
+                            <i class="ri-building-2-line mr-2"></i>
+                            Commercial
+                        </a>
+
+                        <a href="#"
+                           class="block px-5 py-3
+                                  text-[#0B2A5B]
+                                  hover:bg-[#B9DDF5]
+                                  hover:text-[#F57C00]
+                                  rounded-b-xl">
+                            <i class="ri-landscape-line mr-2"></i>
+                            Land
+                        </a>
+
+                    </div>
+                </div>
+                <div class="relative group">
+
+                    <button
+                        class="flex items-center gap-1
+                               font-semibold text-[#0B2A5B]
+                               hover:text-[#F57C00] transition">
+
+                        Buy
+
+                        <i class="ri-arrow-down-s-line
+                                  text-lg
+                                  group-hover:rotate-180
+                                  transition"></i>
+
+                    </button>
+                    <div
+                        class="absolute left-0 top-full mt-3
+                               w-48 bg-white rounded-xl
+                               shadow-xl
+                               opacity-0 invisible
+                               group-hover:opacity-100
+                               group-hover:visible
+                               transition-all duration-200" style="background-color:rgba(179, 214, 238); border:1px solid gray;">
+
+                        <a href="#"
+                           class="block px-5 py-3
+                                  text-[#0B2A5B]
+                                  hover:bg-[#B9DDF5]
+                                  hover:text-[#F57C00]
+                                  rounded-t-xl">
+                            Buy Apartment
+                        </a>
+
+                        <a href="#"
+                           class="block px-5 py-3
+                                  text-[#0B2A5B]
+                                  hover:bg-[#B9DDF5]
+                                  hover:text-[#F57C00]">
+                            Buy House
+                        </a>
+
+                        <a href="#"
+                           class="block px-5 py-3
+                                  text-[#0B2A5B]
+                                  hover:bg-[#B9DDF5]
+                                  hover:text-[#F57C00]
+                                  rounded-b-xl">
+                            Buy Land
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="relative group">
+
+                    <button
+                        class="flex items-center gap-1
+                               font-semibold text-[#0B2A5B]
+                               hover:text-[#F57C00] transition">
+
+                        Rent
+
+                        <i class="ri-arrow-down-s-line
+                                  text-lg
+                                  group-hover:rotate-180
+                                  transition"></i>
+
+                    </button>
+
+
+                    <div
+                        class="absolute left-0 top-full mt-3
+                               w-48 bg-white rounded-xl
+                               shadow-xl
+                               opacity-0 invisible
+                               group-hover:opacity-100
+                               group-hover:visible
+                               transition-all duration-200" style="background-color:rgba(179, 214, 238); border:1px solid gray;">
+
+                        <a href="#"
+                           class="block px-5 py-3
+                                  text-[#0B2A5B]
+                                  hover:bg-[#B9DDF5]
+                                  hover:text-[#F57C00]
+                                  rounded-t-xl">
+                            Apartments
+                        </a>
+
+                        <a href="#"
+                           class="block px-5 py-3
+                                  text-[#0B2A5B]
+                                  hover:bg-[#B9DDF5]
+                                  hover:text-[#F57C00]">
+                            Houses
+                        </a>
+
+                        <a href="#"
+                           class="block px-5 py-3
+                                  text-[#0B2A5B]
+                                  hover:bg-[#B9DDF5]
+                                  hover:text-[#F57C00]
+                                  rounded-b-xl">
+                            Commercial
+                        </a>
+
+                    </div>
+
+                </div>
+                <a href="#"
+                   class="font-semibold text-[#0B2A5B]
+                          hover:text-[#F57C00] transition icon">
+                    About Us
+                </a>
+
+            </div>
+            <div class="hidden md:flex items-center gap-3">
+                <button
+                    class="px-5 py-2 rounded-full
+                           border-2 border-[#0B2A5B]
+                           text-[#0B2A5B]
+                           font-semibold
+                           hover:bg-[#0B2A5B]
+                           hover:text-white
+                           transition">
+                    Login
+                </button>
+                <button
+                    class="px-5 py-2 rounded-full
+                           bg-[#F57C00]
+                           text-white
+                           font-semibold
+                           shadow-md
+                           hover:bg-[#0B2A5B]
+                           transition">
+                    Contact Us
+                </button>
+
+            </div>
+            <button
+                class="md:hidden text-3xl
+                       text-[#0B2A5B]">
+
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </nav>
+		
+		<!-- HERO SECTION -->
+<section class="min-h-[650px]" style="background-image:url('images/hero.png');">
+
+    <div class="max-w-7xl mx-auto px-6 py-20
+                grid md:grid-cols-2 gap-12
+                items-center">
+        <div>
+            <div class="inline-flex items-center gap-2
+                        bg-white/70
+                        px-4 py-2 rounded-full
+                        text-[#0B2A5B]
+                        font-semibold text-sm
+                        mb-6 mt-6">
+
+                <i class="ri-home-4-fill text-[#F57C00]"></i>
+
+                Trusted Real Estate Solutions
+
+            </div>
+            <h1 class="text-5xl md:text-6xl
+                       font-extrabold
+                       leading-tight
+                       text-[#0B2A5B]">
+
+                Find Your
+                <span class="text-[#F57C00]">
+                    Dream Property
+                </span>
+
+            </h1>
+            <p class="mt-6 text-lg
+                      leading-8
+                      text-[#0B2A5B]/75
+                      max-w-xl">
+
+                Discover premium properties that match your
+                lifestyle, goals and investment plans.
+                Live better, invest wisely and grow your wealth.
+
+            </p>
+            <div class="flex flex-wrap gap-4 mt-8">
+                <a href="#"
+                   class="px-7 py-3
+                          rounded-full
+                          bg-[#F57C00]
+                          text-white
+                          font-bold
+                          shadow-lg
+                          hover:bg-[#0B2A5B]
+                          transition duration-300">
+
+                    Explore Properties
+
+                    <i class="ri-arrow-right-line ml-2"></i>
+
+                </a>
+                <a href="#"
+                   class="px-7 py-3
+                          rounded-full
+                          border-2
+                          border-[#0B2A5B]
+                          text-[#0B2A5B]
+                          font-bold
+                          hover:bg-[#0B2A5B]
+                          hover:text-white
+                          transition duration-300">
+
+                    Contact Us
+
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="max-w-7xl mx-auto px-6 py-12">
+
+        <div class="grid
+                    grid-cols-1
+                    md:grid-cols-4
+                    gap-5">
+            <div class="border
+                        border-white/20
+                        rounded-2xl
+                        p-7
+                        bg-white/5 cards">
+
+                <i data-lucide="house"
+                   class="text-orange-500">
+                </i>
+
+                <h3 class="font-bold mt-4">
+                    Verified Properties
+                </h3>
+
+                <p class="text-gray-900 text-sm mt-2">
+                    100% genuine listings
+                    and trusted owners.
+                </p>
+
+            </div>
+
+
+            <div class="border
+                        border-white/20
+                        rounded-2xl
+                        p-7
+                        bg-white/5 cards">
+
+                <i data-lucide="shield-check"
+                   class="text-orange-500">
+                </i>
+
+                <h3 class="font-bold mt-4">
+                    Safe & Secure
+                </h3>
+
+                <p class="text-gray-900 text-sm mt-2">
+                    Your safety and privacy
+                    are our priority.
+                </p>
+
+            </div>
+
+
+            <div class="border
+                        border-white/20
+                        rounded-2xl
+                        p-7
+                        bg-white/5 cards">
+
+                <i data-lucide="headphones"
+                   class="text-orange-500">
+                </i>
+
+                <h3 class="font-bold mt-4">
+                    24/7 Support
+                </h3>
+
+                <p class="text-gray-900 text-sm mt-2">
+                    We're always here
+                    to help you.
+                </p>
+
+            </div>
+
+
+            <div class="border
+                        border-white/20
+                        rounded-2xl
+                        p-7
+                        bg-white/5 cards">
+
+                <i data-lucide="star"
+                   class="text-orange-500">
+                </i>
+
+                <h3 class="font-bold mt-4">
+                    Best Deals
+                </h3>
+
+                <p class="text-gray-900 text-sm mt-2">
+                    Get the most value
+                    for your money.
+                </p>
+
+            </div>
+
+        </div>
+	</section>
+	<section class="max-w-7xl mx-auto px-6 py-16">
+
+        <p class="text-orange-500
+                  tracking-[4px]
+                  text-sm">
+            FEATURED PROPERTIES
+        </p>
+
+
+        <div class="flex justify-between items-center mt-3 mb-10">
+
+            <h2 class="text-4xl font-bold">
+                Explore Our Best Listings
+            </h2>
+
+            <a href="#"
+               class="text-orange-500">
+                View All Properties →
+            </a>
+
+        </div>
+
+
+        <!-- CARDS -->
+        <div class="grid
+                    grid-cols-1
+                    sm:grid-cols-2
+                    lg:grid-cols-4
+                    gap-6">
+            <div class="bg-white
+                        text-black
+                        rounded-2xl
+                        overflow-hidden">
+
+                <div class="relative">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKZwe_ycU22yq6hIBmjtTxQNYnxNsEYNWmJbMz2uDegA&s=10"
+                         class="w-full h-52 object-cover card">
+
+                    <span class="absolute
+                                 top-3 left-3
+                                 bg-green-500
+                                 text-white
+                                 px-3 py-1
+                                 rounded-full
+                                 text-sm">
+                        For Sale
+                    </span>
+
+                    <button class="absolute
+                                   top-3 right-3
+                                   bg-white
+                                   rounded-full
+                                   p-2">
+                                            </button>
+
+                </div>
+                <div class="p-5">
+
+                    <h3 class="font-bold text-lg">
+                        Modern Villa with Garden
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                         Indore, Madhya Pradesh
+                    </p>
+
+                    <p class="text-xl font-bold mt-3">
+                        ₹2.5 Cr
+                    </p>
+
+                    <div class="flex
+                                justify-between
+                                text-sm
+                                text-gray-500
+                                mt-4">
+
+                        <span> 4 Beds</span>
+                        <span> 4 Baths</span>
+                        <span>3200 sq ft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="bg-white
+                        text-black
+                        rounded-2xl
+                        overflow-hidden">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRashVljoumBXd-hIuUEjI9br6NGoXETi8RYYreKA5Gnw&s=10"
+                     class="w-full h-52 object-cover card">
+
+                <div class="p-5">
+
+                    <span class="text-blue-500">
+                        For Rent
+                    </span>
+
+                    <h3 class="font-bold text-lg mt-2">
+                        Luxury Apartment
+                    </h3>
+
+                    <p class="text-gray-500">
+                        Bangalore, Karnataka
+                    </p>
+
+                    <p class="text-xl font-bold mt-3">
+                        ₹45,000/month
+                    </p>
+
+                    <div class="flex
+                                justify-between
+                                text-sm
+                                mt-4">
+
+                        <span> 3 Beds</span>
+                        <span> 3 Baths</span>
+                        <span>1800 sq ft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="bg-white
+                        text-black
+                        rounded-2xl
+                        overflow-hidden">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSht-E5UbJ8ZrBIsx53dquo0xc3wDpcAbGM4Sz-rM6jPQ&s=10"
+                     class="w-full h-52 object-cover card">
+
+                <div class="p-5">
+
+                    <span class="text-green-500">
+                        For Sale
+                    </span>
+
+                    <h3 class="font-bold text-lg mt-2">
+                        Premium House
+                    </h3>
+
+                    <p class="text-gray-500">
+                         Pune, Maharashtra
+                    </p>
+
+                    <p class="text-xl font-bold mt-3">
+                        ₹1.8 Cr
+                    </p>
+
+                    <div class="flex
+                                justify-between
+                                text-sm
+                                mt-4">
+
+                        <span> 4 Beds</span>
+                        <span> 3 Baths</span>
+                        <span>2500 sq ft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="bg-white
+                        text-black
+                        rounded-2xl
+                        overflow-hidden">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdtCp91mRhlsSZh67Vo7oLEzN0_8fml4TCXGxlJh6FcQ&s"
+                     class="w-full h-52 object-cover card">
+
+                <div class="p-5">
+
+                    <span class="text-blue-500">
+                        For Rent
+                    </span>
+
+                    <h3 class="font-bold text-lg mt-2">
+                        Cozy Independent Home
+                    </h3>
+
+                    <p class="text-gray-500">
+                         Goa
+                    </p>
+
+                    <p class="text-xl font-bold mt-3">
+                        ₹30,000/month
+                    </p>
+
+                    <div class="flex
+                                justify-between
+                                text-sm
+                                mt-4">
+
+                        <span> 2 Beds</span>
+                        <span> 2 Baths</span>
+                        <span>1200 sq ft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+	<section class="max-w-7xl mx-auto px-6 pb-16">
+
+        <div class="relative
+                    rounded-2xl
+                    overflow-hidden
+                    min-h-[300px]
+                    bg-cover bg-center"
+             style="background-image:url('images/cta.jpg');">
+
+            <div class="absolute inset-0
+                        bg-[#062B55]/80">
+            </div>
+
+            <div class="relative p-10
+                        md:p-16">
+
+                <p class="text-orange-500
+                          tracking-widest">
+                    READY TO FIND YOUR DREAM HOME?
+                </p>
+
+                <h2 class="text-4xl
+                           font-bold
+                           mt-3">
+                    Your Dream Property
+                    <br>
+                    is <span class="text-orange-500">
+                        Waiting!
+                    </span>
+                </h2>
+
+                <p class="text-gray-300 mt-4">
+                    Start your search today and
+                    take the first step towards
+                    a better tomorrow.
+                </p>
+
+                <button class="bg-orange-500
+                               px-6 py-3
+                               rounded-full
+                               mt-6">
+                    Browse Properties →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+	<section class="max-w-7xl mx-auto px-6 py-16">
+
+        <h2 class="text-4xl font-bold">
+            Why Choose Us?
+        </h2>
+
+        <p class="text-gray-400
+                  max-w-xl
+                  mt-4">
+            We make your real estate journey
+            simple, transparent and stress-free.
+        </p>
+
+
+        <div class="grid
+                    grid-cols-2
+                    md:grid-cols-4
+                    gap-10
+                    mt-12">
+
+            <div>
+                <h3 class="text-4xl
+                           font-bold
+                           text-orange-500">
+                    10K+
+                </h3>
+                <p class="text-gray-400">
+                    Properties Listed
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-4xl
+                           font-bold
+                           text-orange-500">
+                    5K+
+                </h3>
+                <p class="text-gray-400">
+                    Happy Customers
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-4xl
+                           font-bold
+                           text-orange-500">
+                    99%
+                </h3>
+                <p class="text-gray-400">
+                    Satisfaction Rate
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-4xl
+                           font-bold
+                           text-orange-500">
+                    4.8/5
+                </h3>
+                <p class="text-gray-400">
+                    Average Rating
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+	<!-- FOOTER -->
+<footer class="bg-[#0B2A5B] text-white">
+
+    <!-- MAIN FOOTER -->
+    <div class="max-w-7xl mx-auto px-6 py-14">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2
+                    lg:grid-cols-4 gap-10">
+
+
+            <!-- BRAND -->
+            <div>
+
+                <!-- Logo -->
+                <div class="flex items-center gap-3 mb-5">
+					<img src="images/logo.png" class="w-28">
+                </div>
+
+
+                <p class="text-white/70
+                          leading-7
+                          max-w-sm">
+
+                    Your trusted partner for finding
+                    the perfect property and making
+                    smart real estate investments.
+
+                </p>
+                <div class="flex gap-3 mt-6">
+
+                    <a href="#"
+                       class="w-10 h-10
+                              rounded-full
+                              bg-white/10
+                              flex items-center justify-center
+                              hover:bg-[#F57C00]
+                              transition">
+
+                        <i class="ri-facebook-fill"></i>
+
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10
+                              rounded-full
+                              bg-white/10
+                              flex items-center justify-center
+                              hover:bg-[#F57C00]
+                              transition">
+
+                        <i class="ri-instagram-line"></i>
+
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10
+                              rounded-full
+                              bg-white/10
+                              flex items-center justify-center
+                              hover:bg-[#F57C00]
+                              transition">
+
+                        <i class="ri-linkedin-fill"></i>
+
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10
+                              rounded-full
+                              bg-white/10
+                              flex items-center justify-center
+                              hover:bg-[#F57C00]
+                              transition">
+
+                        <i class="ri-youtube-fill"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+            <div>
+
+                <h3 class="text-lg font-bold
+                           mb-5
+                           text-[#F57C00]">
+                    Quick Links
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="#"
+                           class="text-white/70
+                                  hover:text-[#F57C00]
+                                  transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                           class="text-white/70
+                                  hover:text-[#F57C00]
+                                  transition">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                           class="text-white/70
+                                  hover:text-[#F57C00]
+                                  transition">
+                            Properties
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                           class="text-white/70
+                                  hover:text-[#F57C00]
+                                  transition">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                           class="text-white/70
+                                  hover:text-[#F57C00]
+                                  transition">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div>
+
+                <h3 class="text-lg font-bold
+                           mb-5
+                           text-[#F57C00]">
+                    Properties
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="#"
+                           class="text-white/70
+                                  hover:text-[#F57C00]
+                                  transition">
+                            Buy Property
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                           class="text-white/70
+                                  hover:text-[#F57C00]
+                                  transition">
+                            Rent Property
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                           class="text-white/70
+                                  hover:text-[#F57C00]
+                                  transition">
+                            Apartments
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                           class="text-white/70
+                                  hover:text-[#F57C00]
+                                  transition">
+                            Houses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                           class="text-white/70
+                                  hover:text-[#F57C00]
+                                  transition">
+                            Commercial
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div>
+
+                <h3 class="text-lg font-bold
+                           mb-5
+                           text-[#F57C00]">
+                    Contact Us
+                </h3>
+                <div class="flex gap-3 mb-4">
+
+                    <i class="ri-map-pin-line
+                              text-xl
+                              text-[#F57C00]"></i>
+
+                    <p class="text-white/70">
+                        k-50/11 Navjivan colony,<br>
+                        Hadco Aurangabad, India
+                    </p>
+
+                </div>
+                <div class="flex gap-3 mb-4">
+
+                    <i class="ri-phone-line
+                              text-xl
+                              text-[#F57C00]"></i>
+
+                    <a href="tel:+919876543210"
+                       class="text-white/70
+                              hover:text-white">
+                        +91 7264022913
+                    </a>
+
+                </div>
+                <div class="flex gap-3">
+
+                    <i class="ri-mail-line
+                              text-xl
+                              text-[#F57C00]"></i>
+
+                    <a href="mailto:info@liveproperty.com"
+                       class="text-white/70
+                              hover:text-white">
+                        name@liveproperty.com
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="border-t
+                border-white/10">
+
+        <div class="max-w-7xl mx-auto
+                    px-6 py-8
+                    flex flex-col
+                    md:flex-row
+                    items-center
+                    justify-between
+                    gap-5">
+
+            <div>
+
+                <h3 class="text-xl font-bold">
+                    Stay Updated
+                </h3>
+
+                <p class="text-white/60 text-sm mt-1">
+                    Get the latest property updates.
+                </p>
+
+            </div>
+
+
+            <div class="flex w-full md:w-auto">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="w-full md:w-72
+                           px-5 py-3
+                           rounded-l-full
+                           outline-none
+                           text-[#0B2A5B]">
+
+                <button
+                    class="px-6 py-3
+                           bg-[#F57C00]
+                           rounded-r-full
+                           font-bold
+                           hover:bg-white
+                           hover:text-[#0B2A5B]
+                           transition">
+
+                    Subscribe
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="border-t border-white/10">
+
+        <div class="max-w-7xl mx-auto
+                    px-6 py-5
+                    flex flex-col
+                    md:flex-row
+                    items-center
+                    justify-between
+                    gap-3">
+
+            <p class="text-sm text-white/60">
+                © 2026 Live Property.
+                All Rights Reserved.
+            </p>
+
+            <div class="flex gap-6 text-sm">
+
+                <a href="#"
+                   class="text-white/60
+                          hover:text-[#F57C00]">
+                    Privacy Policy
+                </a>
+
+                <a href="#"
+                   class="text-white/60
+                          hover:text-[#F57C00]">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+</body>
+</html>
