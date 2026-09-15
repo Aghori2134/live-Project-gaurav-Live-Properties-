@@ -217,17 +217,180 @@
                            transition">
                     Login
                 </button>
-                <button
+                
+<!-- CONTACT BUTTON -->
+				<button
                     class="px-5 py-2 rounded-full
                            bg-[#F57C00]
                            text-white
                            font-semibold
                            shadow-md
                            hover:bg-[#0B2A5B]
-                           transition">
+                           transition" popovertarget="contact">
                     Contact Us
                 </button>
 
+
+<!-- CONTACT POPOVER -->
+<div
+    id="contact"
+    popover
+    class="w-[90%] max-w-lg rounded-2xl border border-gray-200 
+           bg-[#ABCBE2] p-6 shadow-2xl backdrop:bg-black/50
+           open:animate-none">
+
+    <!-- HEADER -->
+    <div class="mb-5 flex items-center justify-between">
+
+        <div>
+            <h2 class="text-2xl font-bold text-gray-900">
+                Contact Us
+            </h2>
+
+            <p class="mt-1 text-sm text-gray-500">
+                Have a question? Send us a message.
+            </p>
+        </div>
+
+        <!-- CLOSE BUTTON -->
+        <button
+            popovertarget="contactPopover"
+            popovertargetaction="hide"
+            class="flex h-9 w-9 items-center justify-center rounded-full 
+                   bg-gray-100 text-gray-600 transition hover:bg-gray-200 
+                   hover:text-black">
+
+            <span class="text-xl">&times;</span>
+        </button>
+
+    </div>
+
+
+    <!-- FORM -->
+    <form class="space-y-4">
+
+        <!-- NAME -->
+        <div>
+            <label
+                for="name"
+                class="mb-1 block text-sm font-medium text-gray-700">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 
+                       text-sm outline-none transition
+                       focus:border-black focus:ring-2 focus:ring-gray-200">
+        </div>
+
+
+        <!-- EMAIL -->
+        <div>
+            <label
+                for="email"
+                class="mb-1 block text-sm font-medium text-gray-700">
+                Email Address
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 
+                       text-sm outline-none transition
+                       focus:border-black focus:ring-2 focus:ring-gray-200">
+        </div>
+
+
+        <!-- PHONE -->
+        <div>
+            <label
+                for="phone"
+                class="mb-1 block text-sm font-medium text-gray-700">
+                Phone Number
+            </label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 
+                       text-sm outline-none transition
+                       focus:border-black focus:ring-2 focus:ring-gray-200">
+        </div>
+
+
+        <!-- SUBJECT -->
+        <div>
+            <label
+                for="subject"
+                class="mb-1 block text-sm font-medium text-gray-700">
+                Subject
+            </label>
+
+            <select
+                id="subject"
+                name="subject"
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 
+                       text-sm outline-none transition
+                       focus:border-black focus:ring-2 focus:ring-gray-200">
+
+                <option value="">Select an option</option>
+                <option value="property">Property Inquiry</option>
+                <option value="buy">Buy a Property</option>
+                <option value="sell">Sell a Property</option>
+                <option value="rent">Rent a Property</option>
+                <option value="other">Other</option>
+
+            </select>
+        </div>
+
+
+        <!-- MESSAGE -->
+        <div>
+            <label
+                for="message"
+                class="mb-1 block text-sm font-medium text-gray-700">
+                Message
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Write your message..."
+                required
+                class="w-full resize-none rounded-lg border border-gray-300 
+                       px-4 py-3 text-sm outline-none transition
+                       focus:border-black focus:ring-2 focus:ring-gray-200"></textarea>
+        </div>
+
+
+        <!-- SUBMIT -->
+        <button
+            type="submit"
+            class="w-full rounded-lg bg-black px-5 py-3 
+                   font-semibold text-white transition duration-300
+                   hover:bg-gray-800 hover:shadow-lg">
+
+            Send Message
+
+        </button>
+
+    </form>
+
+</div>
+
+
+					
             </div>
             <button
                 class="md:hidden text-3xl
@@ -1069,3 +1232,4 @@
 </footer>
 </body>
 </html>
+ 
