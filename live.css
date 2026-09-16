@@ -52,3 +52,37 @@ nav{
 	transform:rotate(360deg);
 	background-color:#F57C00;
 }
+.ghkl{
+	margin-top:20.4%;
+	border:1px solid lightgray;
+	border-radius:10px;
+	font-size:18px;
+}
+.login{
+	border:1px solid darkblue;
+	margin-top:5%;
+	float:left;
+	margin-left:2%;
+	padding:5px 15px;
+	border-radius:10px;
+	font-size:20px;
+	transition:all 0.4s;
+}
+.login:hover{
+	background-color:#0B2A5B;
+	color:white;
+}
+.Contact{
+	background-color:orange;	
+	margin-top:5%;
+	float:left;
+	margin-left:2%;
+	padding:5px 15px;
+	border-radius:10px;
+	font-size:20px;
+	transition:all 0.4s;
+}
+.Contact:hover{
+	background-color:#0B2A5B;
+	color:white;
+}
