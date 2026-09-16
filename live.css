@@ -77,7 +77,7 @@ nav{
 	margin-top:5%;
 	float:left;
 	margin-left:2%;
-	padding:5px 15px;
+	padding:5px 20px;
 	border-radius:10px;
 	font-size:20px;
 	transition:all 0.4s;
@@ -85,4 +85,10 @@ nav{
 .Contact:hover{
 	background-color:#0B2A5B;
 	color:white;
+}
+.menuic{
+	transition:all 0.5s;
+}
+.menuic:hover{
+	transform:rotate(90deg);
 }
